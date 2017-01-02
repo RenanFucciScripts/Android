@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:fillViewport="true"
+    android:scrollbars="none"
+    android:background="@color/color_blankBG"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_add_local"
+    tools:context=".activities.AddLocalActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/box1"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <ImageView
+                    android:layout_width="@dimen/sizeSquareIcones"
+                    android:layout_height="@dimen/sizeSquareIcones"
+                    android:id="@+id/imageView10"
+                    android:src="@drawable/ic_place_white_48dp"
+                    android:tint="@color/colorGrayTransparent"
+                    android:background="@color/colorWhiteMax"
+                    android:padding="4dp"
+
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/sizeSquareIcones"
+                    android:id="@+id/editTextNomeLocal"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:hint="@string/hint_NomedoLocal"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:windowSoftInputMode="stateAlwaysHidden"
+                    android:background="@color/colorWhiteMax"
+                    android:paddingLeft="10dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignLeft="@+id/editTextTelefone"
+                    android:layout_alignStart="@+id/editTextTelefone" />
+
+                <ImageView
+                    android:layout_width="@dimen/sizeSquareIcones"
+                    android:layout_height="@dimen/sizeSquareIcones"
+                    android:id="@+id/imageView13"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/ic_phone_white_48dp"
+                    android:tint="@color/colorGrayTransparent"
+                    android:background="@color/colorWhiteMax"
+                    android:padding="4dp"
+                    android:layout_below="@+id/imageView10"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/sizeSquareIcones"
+                    android:id="@+id/editTextTelefone"
+                    android:hint="@string/hint_telefone"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:background="@color/colorWhiteMax"
+                    android:paddingLeft="10dp"
+                    android:windowSoftInputMode="stateAlwaysHidden"
+                    android:layout_alignTop="@+id/imageView13"
+                    android:layout_toRightOf="@+id/imageView13"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+
+                <ImageView
+                    android:layout_width="@dimen/sizeSquareIcones"
+                    android:layout_height="@dimen/sizeSquareIcones"
+                    android:id="@+id/imageView14"
+                    android:layout_below="@+id/imageView13"
+                    android:src="@drawable/ic_my_location_white_48dp"
+                    android:tint="@color/colorGrayTransparent"
+                    android:background="@color/colorWhiteMax"
+                    android:layout_marginTop="8dp"
+                    android:padding="4dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/sizeSquareIcones"
+                    android:id="@+id/editTextEndereco"
+                    android:hint="@string/hint_endereco"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:background="@color/colorWhiteMax"
+                    android:paddingLeft="10dp"
+                    android:windowSoftInputMode="stateAlwaysHidden"
+                    android:layout_alignTop="@+id/imageView14"
+                    android:layout_toRightOf="@+id/imageView14"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"/>
+
+                <!--<ImageView
+                    android:src="@mipmap/bg_minimap"
+                    android:scaleType="fitXY"-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/editTextEndereco"
+                    android:background="@color/colorWhiteMax"
+                    >
+
+                <fragment
+                    android:name="br.com.inhookahinc.inhookah.fragments.MiniMapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="4dp"
+                    android:id="@+id/minimap"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/text_EstouAqui"
+                    android:id="@+id/textView29"
+                    android:layout_below="@+id/minimap"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    />
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/box2"
+                android:layout_below="@id/box1"
+                android:layout_marginTop="8dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="16dp"
+                android:background="@color/colorWhiteMax"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/text_tipoLocal"
+                    android:id="@+id/textView28"
+                    android:textColor="@color/blackMax"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Restaurante"
+                    android:layout_marginTop="8dp"
+                    android:id="@+id/checkBox_Restaurante"
+                    android:layout_below="@+id/textView28"
+                    android:layout_centerHorizontal="true" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Local Público"
+                    android:id="@+id/checkBox_LocalPublico"
+                    android:layout_below="@+id/checkBox_Restaurante"
+                    android:layout_alignLeft="@+id/checkBox_Restaurante"
+                    android:layout_alignStart="@+id/checkBox_Restaurante" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bar"
+                    android:id="@+id/checkBox_Bar"
+                    android:layout_above="@+id/checkBox_Tabacaria"
+                    android:layout_alignLeft="@+id/checkBox_Tabacaria"
+                    android:layout_alignStart="@+id/checkBox_Tabacaria" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tabacaria"
+                    android:id="@+id/checkBox_Tabacaria"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_alignTop="@+id/checkBox_LocalPublico"
+                    android:layout_toLeftOf="@+id/checkBox_LocalPublico"
+                    android:layout_toStartOf="@+id/checkBox_LocalPublico" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lounge"
+                    android:id="@+id/checkBox_Lounge"
+                    android:layout_alignTop="@+id/checkBox_Restaurante"
+                    android:layout_toRightOf="@+id/checkBox_LocalPublico"
+                    android:layout_toEndOf="@+id/checkBox_LocalPublico"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nem Sei"
+                    android:id="@+id/checkBox_NemSei"
+                    android:layout_alignBottom="@+id/checkBox_LocalPublico"
+                    android:layout_alignLeft="@+id/checkBox_Lounge"
+                    android:layout_alignStart="@+id/checkBox_Lounge" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/box3"
+                android:layout_below="@id/box2"
+                android:layout_marginTop="8dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="8dp"
+                android:background="@color/colorWhiteMax"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_Aluga"
+                    android:id="@+id/switchPermitirUso"
+                    android:buttonTint="@color/colorAccent"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignRight="@+id/switchVende"
+                    android:layout_alignEnd="@+id/switchVende"
+                    android:showText="false"
+                    android:textOn="      "
+                    android:textOff="      "
+                    />
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_Vende"
+                    android:id="@+id/switchVende"
+                    android:layout_alignParentStart="true"
+                    android:checked="false"
+                    android:buttonTint="@color/colorAccent"
+                    android:layout_below="@+id/switchPermitirUso"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignRight="@+id/switchAluga"
+                    android:layout_alignEnd="@+id/switchAluga"
+                    android:showText="false"
+                    android:textOn="      "
+                    android:textOff="      "
+                    />
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_PermiteUso"
+                    android:id="@+id/switchAluga"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/switchVende"
+                    android:layout_alignParentLeft="true"
+                    android:buttonTint="@color/colorAccent"
+                    android:showText="false"
+                    android:textOn="      "
+                    android:textOff="      "
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_PossuiTomada"
+                    android:id="@+id/switchPossuiTomada"
+                    android:buttonTint="@color/colorAccent"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/switchAluga"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignRight="@+id/switchAluga"
+                    android:layout_alignEnd="@+id/switchAluga"
+                    android:showText="false"
+                    android:textOn="      "
+                    android:textOff="      "
+                    />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

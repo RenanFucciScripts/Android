@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_item_geral"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="24dp"
+    android:layout_marginTop="24dp"
+    android:background="@color/colorWhiteMax"
+    android:paddingBottom="24dp"
+    android:paddingTop="24dp"
+    android:layout_centerHorizontal="true">
+
+    <TextView
+        android:id="@+id/fragment_item_geral_usuario_nome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:text="Large Text"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/fragment_item_geral_usuario_tel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Large Text"
+        android:layout_marginTop="12dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_below="@+id/fragment_item_geral_usuario_nome"
+
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/fragment_item_geral_usuario_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Large Text"
+        android:layout_marginTop="12dp"
+        android:layout_centerHorizontal="true"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_below="@+id/fragment_item_geral_usuario_tel"
+/>
+
+    <TextView
+        android:id="@+id/fragment_item_geral_produto_nome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fragment_item_geral_usuario_email"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="Large Text"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/fragment_item_geral_produto_qntd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fragment_item_geral_produto_nome"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:text="Large Text"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/fragment_item_geral_produto_validade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fragment_item_geral_produto_qntd"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:text="Large Text"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+</RelativeLayout>

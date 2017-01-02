@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "339482496127",
+    "firebase_url": "https://homelist-b4559.firebaseio.com",
+    "project_id": "homelist-b4559",
+    "storage_bucket": "homelist-b4559.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:339482496127:android:3dd4ebb34c1014f6",
+        "android_client_info": {
+          "package_name": "com.book.homelist"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "339482496127-cn8590ulsolbvdn7nchoum2kl4h3739i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.book.homelist",
+            "certificate_hash": "00C3F8A571A5376CCFDE8BB0898B5D42224CF415"
+          }
+        },
+        {
+          "client_id": "339482496127-qndv0uqaqncuhv78hpf0isft7e49otoh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.book.homelist",
+            "certificate_hash": "689D31125150D0CC2A659B5661B4C5255D8EA3A4"
+          }
+        },
+        {
+          "client_id": "339482496127-n3u478s78i7g0s5d45g1kau303bc8sk7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBzpv_nIcn3aIJ8cOsHrrfP39c2ChM3gyM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "339482496127-n3u478s78i7g0s5d45g1kau303bc8sk7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

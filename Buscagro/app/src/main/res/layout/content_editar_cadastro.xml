@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/colorPrimaryCleared"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activities.EditarCadastroActivity"
+    tools:showIn="@layout/app_bar_editar_cadastro">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        >
+
+        <ImageView
+            android:id="@+id/ImageView_Icone"
+            android:layout_width="180dp"
+            android:layout_height="90dp"
+            android:src="@mipmap/ic_launcher"
+            android:layout_marginTop="8dp"
+            android:layout_centerHorizontal="true"
+            />
+
+        <ImageView
+            android:id="@+id/imageView_Nome"
+            android:layout_width="@dimen/sizeSquareIcones"
+            android:layout_height="@dimen/sizeSquareIcones"
+            android:src="@drawable/ic_action_name"
+            android:layout_below="@+id/ImageView_Icone"
+            android:background="@color/colorWhiteMax"
+            android:layout_marginLeft="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="36dp"
+
+            />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/sizeSquareIcones"
+            android:inputType="textPersonName"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:hint="@string/hint_NomeCompleto"
+            android:ems="10"
+            android:maxLength="248"
+
+            android:id="@+id/editar_cadastro_editText_NomeCompleto"
+            android:background="@color/colorWhiteMax"
+            android:paddingLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_alignTop="@+id/imageView_Nome"
+            android:layout_toRightOf="@+id/imageView_Nome"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <ImageView
+            android:layout_width="@dimen/sizeSquareIcones"
+            android:layout_height="@dimen/sizeSquareIcones"
+            android:id="@+id/imageView_Email"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorWhiteMax"
+            android:layout_below="@+id/imageView_Nome"
+            android:layout_alignLeft="@+id/imageView_Nome"
+            android:layout_alignStart="@+id/imageView_Nome"
+            android:src="@drawable/ic_action_email"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/sizeSquareIcones"
+            android:inputType="textEmailAddress"
+            android:hint="@string/hint_Email"
+            android:background="@color/colorWhiteMax"
+            android:focusable="true"
+            android:maxLength="248"
+
+            android:enabled="false"
+            android:focusableInTouchMode="true"
+            android:paddingLeft="10dp"
+            android:ems="10"
+            android:id="@+id/editar_cadastro_editText_Email"
+            android:layout_alignBottom="@+id/imageView_Email"
+            android:layout_alignLeft="@+id/editar_cadastro_editText_NomeCompleto"
+            android:layout_alignStart="@+id/editar_cadastro_editText_NomeCompleto"
+            android:layout_alignRight="@+id/editar_cadastro_editText_NomeCompleto"
+            android:layout_alignEnd="@+id/editar_cadastro_editText_NomeCompleto" />
+
+        <ImageView
+            android:layout_width="@dimen/sizeSquareIcones"
+            android:layout_height="@dimen/sizeSquareIcones"
+            android:id="@+id/imageView5"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorWhiteMax"
+            android:layout_below="@+id/imageView_Email"
+            android:layout_alignLeft="@+id/imageView_Email"
+            android:layout_alignStart="@+id/imageView_Email"
+            android:src="@drawable/ic_action_name2"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/sizeSquareIcones"
+            android:inputType="textPassword"
+            android:hint="@string/hint_Senha"
+            android:background="#FFFFFF"
+            android:paddingLeft="10dp"
+            android:maxLength="48"
+
+            android:ems="10"
+            android:id="@+id/editar_cadastro_editText_SenhaUm"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_alignTop="@+id/editar_cadastro_editText_SenhaDois"
+            android:layout_alignLeft="@+id/editar_cadastro_editText_Email"
+            android:layout_alignStart="@+id/editar_cadastro_editText_Email"
+            android:layout_toLeftOf="@+id/textView4"
+            android:layout_toStartOf="@+id/textView4" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/sizeSquareIcones"
+            android:inputType="textPassword"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:hint="@string/hint_Senha2x"
+            android:background="#FFFFFF"
+            android:maxLength="48"
+
+            android:ems="10"
+            android:id="@+id/editar_cadastro_editText_SenhaDois"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="8dp"
+            android:paddingLeft="10dp"
+            android:layout_below="@+id/editar_cadastro_editText_Email"
+            android:layout_toRightOf="@+id/editar_cadastro_editText_SenhaUm"
+            android:layout_alignRight="@+id/editar_cadastro_editText_Email"
+            android:layout_alignEnd="@+id/editar_cadastro_editText_Email" />
+
+        <ImageView
+            android:layout_width="@dimen/sizeSquareIcones"
+            android:layout_height="@dimen/sizeSquareIcones"
+            android:layout_marginTop="8dp"
+            android:id="@+id/imageView6"
+            android:padding="2dp"
+            android:layout_below="@+id/imageView5"
+            android:background="@color/colorWhiteMax"
+            android:layout_alignLeft="@+id/imageView5"
+            android:layout_alignStart="@+id/imageView5"
+            android:src="@drawable/ic_action_tel"
+            />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/sizeSquareIcones"
+            android:inputType="phone"
+            android:hint="@string/hint_ExTelefone"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:ems="10"
+            android:maxLength="9"
+
+            android:id="@+id/editar_cadastro_editText_telefone"
+            android:layout_marginTop="8dp"
+            android:paddingLeft="10dp"
+            android:layout_below="@+id/editar_cadastro_editText_SenhaUm"
+            android:layout_toRightOf="@+id/imageView6"
+            android:layout_alignRight="@+id/editar_cadastro_editText_SenhaDois"
+            android:layout_alignEnd="@+id/editar_cadastro_editText_SenhaDois"
+            android:background="@color/colorWhiteMax"/>
+
+        <ImageView
+            android:layout_width="@dimen/sizeSquareIcones"
+            android:layout_height="@dimen/sizeSquareIcones"
+            android:id="@+id/imageView7"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorWhiteMax"
+            android:layout_below="@+id/imageView6"
+            android:layout_alignLeft="@+id/imageView6"
+            android:layout_alignStart="@+id/imageView6"
+            android:src="@drawable/ic_action_name3"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/sizeSquareIcones"
+            android:inputType="textPostalAddress"
+            android:ems="10"
+            android:id="@+id/editar_cadastro_editText_endereco"
+            android:hint="@string/hint_Endereco"
+            android:layout_marginTop="8dp"
+            android:focusable="true"
+            android:maxLength="248"
+            android:focusableInTouchMode="true"
+            android:paddingLeft="10dp"
+            android:layout_below="@+id/imageView6"
+            android:layout_toRightOf="@+id/imageView7"
+            android:layout_alignRight="@+id/editar_cadastro_editText_telefone"
+            android:layout_alignEnd="@+id/editar_cadastro_editText_telefone"
+            android:background="@color/colorWhiteMax"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioGroup"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/editar_cadastro_editText_endereco">
+
+        </RadioGroup>
+
+
+        <Button
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:text="@string/text_Cadastrar"
+            android:id="@+id/editar_cadastro_button_Cadastrar"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@color/colorWhiteMax"
+            android:layout_marginTop="50dp"
+            android:layout_below="@+id/radioGroup"
+            android:layout_alignLeft="@id/imageView6"
+            android:layout_alignRight="@id/editar_cadastro_editText_endereco"
+            android:onClick="onClickCadastrar"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="5dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="    "
+            android:id="@+id/textView4"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/editar_cadastro_button_Cadastrar"/>
+
+
+    </RelativeLayout>
+</ScrollView>

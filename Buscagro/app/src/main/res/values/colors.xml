@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#239e2a</color>
+    <color name="colorPrimaryDark">#309f36</color>
+    <color name="colorAccent">#4fb53f</color>
+    <color name="colorPrimaryCleared">#f4f4f4</color>
+    <color name="colorLinks">#4fb53f</color>
+    <color name="colorGrayTransparent">#909f9f9f</color>
+    <color name="colorWhiteMax">#FFFFFF</color>
+    <color name="colorNewACC">#904fa340</color>
+    <color name="colorInverse">#ff6a00</color>
+    <color name="tabsScrollColor">#004D40</color>
+    <color name="colorSecondaryText">#727272</color>
+</resources>

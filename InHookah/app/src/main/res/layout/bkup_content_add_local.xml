@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:fillViewport="true"
+    android:scrollbars="none"
+    android:background="@color/colorWhiteMax"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_add_local"
+    tools:context=".activities.AddLocalActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/box1"
+                android:background="@color/colorWhiteMax"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editTextNomeLocal"
+                    android:hint="@string/hint_NomedoLocal"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:windowSoftInputMode="stateAlwaysHidden"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignRight="@+id/editTextTelefone"
+                    android:layout_alignEnd="@+id/editTextTelefone"
+                    />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editTextTelefone"
+                    android:hint="@string/hint_telefone"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:windowSoftInputMode="stateAlwaysHidden"
+                    android:layout_below="@+id/editTextNomeLocal"
+                    android:layout_alignRight="@+id/textView29"
+                    android:layout_alignEnd="@+id/textView29"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editTextEndereco"
+                    android:layout_alignParentStart="true"
+                    android:hint="@string/hint_endereco"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:windowSoftInputMode="stateAlwaysHidden"
+                    android:layout_below="@+id/editTextTelefone"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignRight="@+id/minimap"
+                    android:layout_alignEnd="@+id/minimap"
+                    />
+
+                <!--<ImageView
+                    android:src="@mipmap/bg_minimap"
+                    android:scaleType="fitXY"-->
+                <fragment
+                    android:name="br.com.inhookahinc.inhookah.fragments.MiniMapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="8dp"
+                    android:id="@+id/minimap"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/editTextEndereco"
+                    android:layout_alignParentLeft="true"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/text_EstouAqui"
+                    android:id="@+id/textView29"
+                    android:layout_below="@+id/minimap"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/box2"
+                android:layout_below="@id/box1"
+                android:layout_marginTop="8dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="8dp"
+                android:background="@color/colorWhiteMax"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/text_tipoLocal"
+                    android:id="@+id/textView28"
+                    android:textColor="@color/blackMax"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+
+                <Spinner
+                    android:backgroundTint="@color/colorAccent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="70dp"
+                    android:id="@+id/spinnerTipoLocal"
+                    android:entries="@array/arrayLocais"
+                    android:layout_toRightOf="@+id/textView28"
+                    android:layout_below="@+id/textView28"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="140dp"
+                android:id="@+id/box3"
+                android:layout_below="@id/box2"
+                android:layout_marginTop="8dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="8dp"
+                android:background="@color/colorWhiteMax"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_Aluga"
+                    android:id="@+id/switchPermitirUso"
+                    android:buttonTint="@color/colorAccent"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignRight="@+id/switchVende"
+                    android:layout_alignEnd="@+id/switchVende"
+                    android:showText="false"
+                    android:textOn="      "
+                    android:textOff="      "
+                    />
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_Vende"
+                    android:id="@+id/switchVende"
+                    android:layout_alignParentStart="true"
+                    android:checked="false"
+                    android:buttonTint="@color/colorAccent"
+                    android:layout_below="@+id/switchPermitirUso"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignRight="@+id/switchAluga"
+                    android:layout_alignEnd="@+id/switchAluga"
+                    android:showText="false"
+                    android:textOn="      "
+                    android:textOff="      "
+                    />
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_PermiteUso"
+                    android:id="@+id/switchAluga"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/switchVende"
+                    android:layout_alignParentLeft="true"
+                    android:buttonTint="@color/colorAccent"
+                    android:showText="false"
+                    android:textOn="      "
+                    android:textOff="      "
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_PossuiTomada"
+                    android:id="@+id/switchPossuiTomada"
+                    android:buttonTint="@color/colorAccent"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/switchAluga"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignRight="@+id/switchAluga"
+                    android:layout_alignEnd="@+id/switchAluga"
+                    android:showText="false"
+                    android:textOn="      "
+                    android:textOff="      "
+                    />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_buscar_local"
+            android:icon="@drawable/ic_search_black_48dp"
+            android:title="Buscar Local"
+            android:divider="#000000"
+            android:dividerHeight="1dp"
+            />
+
+
+        <item
+            android:id="@+id/nav_add_local"
+            android:icon="@drawable/ic_add_location_black_48dp"
+            android:title="Adicionar Local"
+            android:divider="#000000"
+            android:dividerHeight="1dp"
+
+            />
+
+        <item android:id="@+id/nav_promo"
+            android:icon="@drawable/ic_local_offer_black_48dp"
+            android:title="Promoções"
+            android:divider="#000000"
+            android:dividerHeight="1dp"
+
+            />
+
+
+        <item
+            android:id="@+id/nav_perfil"
+            android:icon="@drawable/ic_person_black_48dp"
+            android:title="Perfil"
+            android:divider="#000000"
+            android:dividerHeight="1dp"
+
+            />
+
+
+        <item
+            android:id="@+id/nav_mais_sobre"
+            android:icon="@drawable/ic_more_horiz_black_48dp"
+            android:title="Mais"
+            />
+    </group>
+
+    <item android:title="Comunicação">
+        <menu>
+            <item android:id="@+id/nav_fazer_chekin"
+                android:icon="@drawable/ic_pin_drop_black_48dp"
+                android:title="Fazer Check-in" />
+
+            <item android:id="@+id/nav_share"
+                android:icon="@drawable/ic_share_black_48dp"
+                android:title="Conte a um Amigo" />
+        </menu>
+    </item>
+
+
+</menu>

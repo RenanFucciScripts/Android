@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Minha Lista</string>
+    <string name="google_sign_in_key">339482496127-n3u478s78i7g0s5d45g1kau303bc8sk7.apps.googleusercontent.com</string>
+
+    <string name="erro_google_sign_in">Erro ao efetuar login com a conta do Google.</string>
+    <string name="button_google_sign_in">Login com Google</string>
+    <string name="nome">Nome do grupo</string>
+    <string name="digite_o_nome_do_grupo">Digite o nome do grupo...</string>
+    <string name="txt_criando_grupo">Criando grupo...</string>
+    <string name="txt_required">Obrigatório.</string>
+    <string name="logout">Logout</string>
+    <string name="imagem_sem_dados">Imagem sem dados</string>
+    <string name="title_activity_add_item">Itens da lista</string>
+    <string name="txt_add_item">Adicionar item</string>
+    <string name="quantidade">Quantidade</string>
+    <string name="nome_do_item">Nome do item</string>
+    <string name="marca_opcional">Marca (opcional)</string>
+    <string name="imagem_do_item">Imagem do item</string>
+    <string name="salvando">Salvando...</string>
+    <string name="cone_do_item">Ícone do item</string>
+    <string name="comprado_status">Comprado Status</string>
+    <string name="sem_marca">Sem marca</string>
+    <string name="cone_admin">Ícone Admin</string>
+
+    <string-array name="tabs">
+        <item>Itens</item>
+        <item>Usuários</item>
+    </string-array>
+    <string name="title_activity_search_add_user">Buscar usuários</string>
+    <string name="txt_digite_busca">Digite sua busca...</string>
+    <string name="buscar_usu_rios">Buscar Usuários</string>
+    <string name="txt_buscar">Buscar usuários</string>
+    <string name="sair_do_grupo">Sair do grupo</string>
+
+</resources>

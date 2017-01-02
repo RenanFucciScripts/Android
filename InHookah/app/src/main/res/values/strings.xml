@@ -1,0 +1,158 @@
+<resources>
+    <string name="app_name">InHookah</string>
+    <string name="facebook_app_id">199359987093007</string>
+
+    <string name="com_facebook_loginview_log_out_button">Log out</string>
+    <string name="com_facebook_loginview_log_in_button">Log in</string>
+    <string name="com_facebook_loginview_log_in_button_long">Log in com Facebook</string>
+
+    <string name="navigation_drawer_open">Abrir Menu</string>
+    <string name="navigation_drawer_close">Fechar Menu</string>
+    <string name="shareWith">Compartilhar com</string>
+    <string name="action_settings">Configurações</string>
+
+    <!--            TITLES      -->
+    <string name="title_activity_perfil">Perfil</string>
+    <string name="title_activity_buscar_local_acitivity">Buscar Local</string>
+    <string name="title_activity_add_local_acitivity">Adicionar Local</string>
+    <string name="title_activity_promo">Promoções</string>
+    <string name="title_activity_add_local">Adicionar Local</string>
+    <string name="title_activity_search_local">Buscar Local</string>
+    <string name="title_activity_add_local_">Adicionar Local</string>
+
+    <string name="userFavoritos">Favoritos</string>
+    <string name="userEventosRecentes">Recentes</string>
+    <string name="userId">User ID</string>
+    <string name="userName">UserName</string>
+    <string name="userPhone">UserPhone</string>
+    <string name="userLevel">UserLevel</string>
+
+    <string name="hint_telefone">Telefone</string>
+    <string name="hint_endereco">Endereço ou clique em Estou Aqui!</string>
+    <string name="hint_NomedoLocal">Nome do Local</string>
+    <string name="hint_LoginEmail">Login | Email *</string>
+    <string name="button_Entrar">Entrar</string>
+    <string name="textView_EsqcSenha">Esqueceu sua Senha?</string>
+    <string name="text_CrieUmaCC">Novo no InHookah, crie uma conta!</string>
+    <string name="text_tipoLocal">Tipos do Local:</string>
+    <string name="text_PermiteUso">Permite Uso</string>
+    <string name="text_Vende">Vende</string>
+    <string name="text_Aluga">Aluga</string>
+    <string name="text_PossuiTomada">Possui Tomada</string>
+    <string name="text_EstouAqui">Estou Aqui!</string>
+    <string name="text_AdicionarLocal">Adicionar Local</string>
+    <string name="text_SobreosNiveis">Sobre os Níveis</string>
+    <string name="text_AnunciSuaPromocao">Anuncie sua Promoção</string>
+    <string name="text_SobreNos">Sobre Nós</string>
+    <string name="text_EventosRecentes">Eventos Recentes</string>
+    <string name="text_Favoritos">Favoritos</string>
+
+    <string name="queryHint_BuscarLocal">Buscar Local</string>
+
+
+    <string-array name="arrayExample">
+        <item>Item 1</item>
+        <item>Item 2</item>
+        <item>Item 3</item>
+    </string-array>
+
+    <string-array name="arrayMais">
+        <item>Sobre</item>
+        <item>Anuncie sua Promoção</item>
+        <item>Sobre os Níveis</item>
+    </string-array>
+
+    <string-array name="arrayLocais">
+        <item>Bar (Aberto)</item>
+        <item>Lounge</item>
+        <item>Tabacaria</item>
+        <item>Restaurante</item>
+        <item>Local Público</item>
+        <item>Nem Sei!</item>
+    </string-array>
+    <string name="title_activity_mais">Mais</string>
+    <string name="title_activity_sobre_niveis_acctivity">Sobre os Niveis</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="fill_name">Preencha o nome</string>
+    <string name="fill_address">Dê ao menos uma referência</string>
+    <string name="title_activity_menu">InHookah</string>
+    <string name="text_login_fb">  Login com Facebook</string>
+    <string name="text_or">OU</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+    <string name="text_config">Configurações</string>
+    <string name="title_activity_cadastro">Cadastro</string>
+    <string name="hint_Senha">Senha *</string>
+    <string name="hint_Senha2x">Repita a Senha *</string>
+    <string name="hint_ExTelefone">(00) 00000-0000</string>
+    <string name="text_Cadastrar">Cadastrar</string>
+    <string name="hint_Email">E-mail *</string>
+    <string name="hint_NomeCompleto">Nome Completo *</string>
+    <string name="textView_email_subscribe">Deseja receber notícias e promoções por e-mail?</string>
+    <string name="text_termos_uso">Clicando em CADASTRAR, você concorda com todos os termos de uso aqui descritos.</string>
+    <string name="text_fale_conosco">Fale Conosco</string>
+    <string name="conte_a_um_amigo">Conte a um Amigo</string>
+    <string name="fazer_check_in_fb">Fazer Check-in</string>
+    <string name="text_ajuda">Ajuda</string>
+    <string name="title_activity_decider_main">InHookah</string>
+    <string name="add_local_title_salvar">Salvar</string>
+
+</resources>

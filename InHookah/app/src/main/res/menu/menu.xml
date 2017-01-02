@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".activities.MenuActivity">
+
+
+    <item android:id="@+id/action_toolbar_add"
+        android:icon="@drawable/ic_add_location_white_48dp"
+        android:title="Adicionar Local"
+        android:orderInCategory="1"
+        android:menuCategory="container"
+        app:showAsAction="ifRoom"
+        />
+    <item android:id="@+id/action_toolbar_checkIn"
+        android:icon="@drawable/ic_pin_drop_white_48dp"
+        android:title="Fazer Check-in"
+        android:orderInCategory="2"
+        android:menuCategory="container"
+        app:showAsAction="ifRoom"
+        />
+</menu>

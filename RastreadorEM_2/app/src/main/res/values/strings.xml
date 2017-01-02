@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Rastreador EM</string>
+    <string name="title_activity_buscar_crianca">Buscar Crianca</string>
+    <string name="title_activity_bdconfig">Configurações BD</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+
+    <string name="action_settings">Settings</string>
+    <string name="text_login">Login</string>
+    <string name="label_busca_crianca">Buscar Criança</string>
+    <string name="editar_configura_es_bd">Editar Configurações BD</string>
+    <string name="nome_do_bd">Nome do BD:</string>
+    <string name="ip_do_host">IP do Host:</string>
+    <string name="usu_rio">Usuário</string>
+    <string name="senha">Senha:</string>
+    <string name="configuracoes_validas_e_salvas">Configurações do banco de dados são válidas e foram salvas!</string>
+    <string name="configuracoes_nao_validas">Configurações do banco de dados não são válidas!\nAltere para configurações válidas.</string>
+    <string name="login">Login</string>
+    <string name="entrar">Entrar</string>
+    <string name="cod_crianca_inexistente">Código de crianca inexixtente.</string>
+    <string name="cod_crianca_vazia">Crianca não possui registros.</string>
+    <string name="title_activity_buscar_criancas_php">Buscar Criança</string>
+    <string name="logout">Logout</string>
+    <string name="banco_de_dados">Banco de Dados</string>
+    <string name="label_busca_crianca_php">Buscar Criança PHP</string>
+    <string name="cod_crianca_inexistente_ou_vazia">Código de crianca inexixtente ou não possui registros.</string>
+    <string name="param_post_errado">Parametro POST errado.</string>
+    <string name="erro_web_service">Erro Script Server-Side</string>
+    <string name="erro_desconhecido">Erro desconhecido.</string>
+    <string name="campos_vazios">Campos Vazios</string>
+    <string name="impossivel_fzr_download">Impossivel Fazer o Download</string>
+    <string name="nao_pode_salvo">Arquivo não pode ser salvo.</string>
+    <string name="salvo_sucesso">Arquivo salvo com sucesso.</string>
+
+</resources>

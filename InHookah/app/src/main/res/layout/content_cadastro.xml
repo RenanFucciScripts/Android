@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryCleared"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.renanfucci.buscagro.CadastroActivity"
+    tools:showIn="@layout/activity_cadastro"
+    android:fillViewport="true" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/RelativeLayoutMain_cadastro"
+            >
+            <ImageView
+                android:id="@+id/ImageView_userImg"
+                android:layout_width="180dp"
+                android:layout_height="100dp"
+                android:background="@color/colorWhiteMax"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginTop="24dp"
+                android:layout_alignRight="@+id/editText_NomeCompleto"
+                android:layout_alignEnd="@+id/editText_NomeCompleto"
+                android:layout_alignLeft="@+id/imageView_Nome"
+                android:layout_alignStart="@+id/imageView_Nome" />
+
+            <ImageView
+                android:id="@+id/imageView_Nome"
+                android:layout_width="@dimen/sizeSquareIcones"
+                android:layout_height="@dimen/sizeSquareIcones"
+                android:src="@drawable/ic_person_white_48dp"
+                android:tint="@color/colorGrayTransparent"
+                android:layout_below="@+id/ImageView_userImg"
+                android:background="@color/colorWhiteMax"
+                android:layout_marginLeft="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="56dp"
+
+                />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/sizeSquareIcones"
+                android:inputType="textPersonName"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:hint="@string/hint_NomeCompleto"
+                android:ems="10"
+                android:id="@+id/editText_NomeCompleto"
+                android:background="@color/colorWhiteMax"
+                android:paddingLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_alignTop="@+id/imageView_Nome"
+                android:layout_toRightOf="@+id/imageView_Nome"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <ImageView
+                android:layout_width="@dimen/sizeSquareIcones"
+                android:layout_height="@dimen/sizeSquareIcones"
+                android:id="@+id/imageView_Email"
+                android:padding="4dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/colorWhiteMax"
+                android:layout_below="@+id/imageView_Nome"
+                android:layout_alignLeft="@+id/imageView_Nome"
+                android:layout_alignStart="@+id/imageView_Nome"
+                android:src="@drawable/ic_email_white_48dp"
+                android:tint="@color/colorGrayTransparent"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/sizeSquareIcones"
+                android:inputType="textEmailAddress"
+                android:hint="@string/hint_Email"
+                android:background="@color/colorWhiteMax"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:paddingLeft="10dp"
+                android:ems="10"
+                android:id="@+id/editText_Email"
+                android:layout_alignBottom="@+id/imageView_Email"
+                android:layout_alignLeft="@+id/editText_NomeCompleto"
+                android:layout_alignStart="@+id/editText_NomeCompleto"
+                android:layout_alignRight="@+id/editText_NomeCompleto"
+                android:layout_alignEnd="@+id/editText_NomeCompleto" />
+
+            <ImageView
+                android:layout_width="@dimen/sizeSquareIcones"
+                android:layout_height="@dimen/sizeSquareIcones"
+                android:padding="4dp"
+                android:id="@+id/imageView5"
+                android:layout_marginTop="8dp"
+                android:background="@color/colorWhiteMax"
+                android:layout_below="@+id/imageView_Email"
+                android:layout_alignLeft="@+id/imageView_Email"
+                android:layout_alignStart="@+id/imageView_Email"
+                android:src="@drawable/ic_lock_white_48dp"
+                android:tint="@color/colorGrayTransparent"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/sizeSquareIcones"
+                android:inputType="textPassword"
+                android:hint="@string/hint_Senha"
+                android:background="#FFFFFF"
+                android:paddingLeft="10dp"
+                android:ems="10"
+                android:id="@+id/editText_SenhaUm"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:layout_alignTop="@+id/editText_SenhaDois"
+                android:layout_alignLeft="@+id/editText_Email"
+                android:layout_alignStart="@+id/editText_Email"
+                android:layout_toLeftOf="@+id/textView4"
+                android:layout_toStartOf="@+id/textView4" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/sizeSquareIcones"
+                android:inputType="textPassword"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:hint="@string/hint_Senha2x"
+                android:background="#FFFFFF"
+                android:ems="10"
+                android:id="@+id/editText_SenhaDois"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="8dp"
+                android:paddingLeft="10dp"
+                android:layout_below="@+id/editText_Email"
+                android:layout_toRightOf="@+id/editText_SenhaUm"
+                android:layout_alignRight="@+id/editText_Email"
+                android:layout_alignEnd="@+id/editText_Email" />
+
+
+
+
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioGroup"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/editText_SenhaDois">
+
+            </RadioGroup>
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="8dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="    "
+                android:id="@+id/textView4"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/editText_Email"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Insira uma Imagem:"
+
+                android:id="@+id/textView_insiraImg"
+                android:layout_alignTop="@+id/ImageView_userImg"
+                android:layout_alignLeft="@+id/ImageView_userImg"
+                android:layout_alignStart="@+id/ImageView_userImg"
+                android:layout_margin="8dp" />
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:id="@+id/imageButton_btn_getImg"
+                android:tint="@color/colorGrayTransparent"
+                android:background="@color/transparent"
+                android:src="@drawable/ic_photo_size_select_large_white_48dp"
+                android:onClick="onClickCarregar"
+                android:layout_below="@+id/textView_insiraImg"
+                android:layout_alignRight="@+id/ImageView_userImg"
+                android:layout_alignEnd="@+id/ImageView_userImg" />
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/RelativeLayoutMain_cadastro"
+            android:layout_marginTop="26dp"
+            android:paddingBottom="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/checkBox2"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/text_termos_uso"
+                android:id="@+id/textView_TermosCompromisso"
+                android:paddingLeft="8dp"
+                android:layout_marginTop="32dp"
+                android:layout_below="@+id/textView"
+                android:layout_alignLeft="@+id/checkBox2"
+                android:layout_alignStart="@+id/checkBox2"
+                android:layout_alignRight="@+id/textView"
+                android:layout_alignEnd="@+id/textView" />
+
+            <Button
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:text="@string/text_Cadastrar"
+                android:id="@+id/button_Cadastrar"
+                android:background="@color/colorPrimaryDark"
+                android:textColor="@color/colorWhiteMax"
+                android:layout_below="@+id/textView_TermosCompromisso"
+                android:layout_alignRight="@+id/textView_TermosCompromisso"
+                android:layout_alignEnd="@+id/textView_TermosCompromisso"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                android:onClick="onClickCadastrar"
+                android:layout_alignLeft="@+id/checkBox2"
+                android:layout_alignStart="@+id/checkBox2"
+                android:layout_alignParentEnd="false"
+                android:layout_alignParentStart="false"
+                android:layout_alignParentBottom="false" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/textView_email_subscribe"
+                android:id="@+id/textView"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="20dp"
+                android:layout_toRightOf="@+id/checkBox2"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+        </RelativeLayout>
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/cadastro_progress_bar"
+            style="?android:progressBarStyleLarge"
+            android:indeterminate="true"
+            android:indeterminateDrawable="@drawable/circular_progress_view" />
+    </RelativeLayout>
+</ScrollView>

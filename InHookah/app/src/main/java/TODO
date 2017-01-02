@@ -1,0 +1,19 @@
+
+            TODO *********** URGENTE
+
+- setar as infos de cadastro no banco e nas interfaces (drawers e no perfil);
+- pesquisar como colocar a API MAPS offline;
+- linkar o botão de check-in com API FB;
+- pintar os drawers icons;
+- Botoes da Tela MAIS;
+- botao "Estou Aqui" da tela ADD, substituir o o editText[telelfone]
+
+            TODO ???????????? INHOOKAHINC
+
+- Botão AJUDA na tela mais, porque tem que fazer a documentação e uma interface de interação pra todos os componentes gráficos;
+- mudar os nomes dos Buscar Local para?
+- dar a opção de trocar foto depois do login?
+
+            TODO *********** FINAL
+- Animaçãos;
+- Caixas de Dialogo, META-DADOS;

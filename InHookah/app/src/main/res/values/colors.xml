@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#cd1207</color>
+    <color name="colorPrimaryDark">#ba1107</color>
+    <color name="colorAccent">#fd000d</color>
+    <color name="colorHeaderMenu">#42cacaca</color>
+    <color name="blackMax">#000000</color>
+    <color name="colorPrimaryCleared">#f4f4f4</color>
+    <color name="colorLinks">#4fb53f</color>
+    <color name="colorGrayTransparent">#909f9f9f</color>
+    <color name="colorBlueTransparent">#90648cd7</color>
+    <color name="colorWhiteMax">#FFFFFF</color>
+    <color name="colorWhiteMaxTransparent">#8dffffff</color>
+    <color name="colorNewACC">#90a34240</color>
+    <color name="colorNewACCPower">#b5a34240</color>
+    <color name="colorInverse">#ff6a00</color>
+    <color name="tabsScrollColor">#004D40</color>
+    <color name="colorSecondaryText">#727272</color>
+    <color name="color_blankBG">#F0EFF5</color>
+    <color name="transparent">#00ffffff</color>
+    <color name="colorAccentTransparent">#9cfd000d</color>
+</resources>
